@@ -41,7 +41,7 @@ def convert_crontimes(crontime):
         
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Check your stuff.")
-    parser.add_argument('-m', '--mode', choices=['daemon', 'cron'], required=True, help='The mode the application will run it.')
+    parser.add_argument('-m', '--mode', choices=['daemon', 'cron'], required=True, help='The mode the application will run in.')
     parser.add_argument('-c', '--crontime', choices=['minute', 'hour', 'day', 'day_noon'], help='When in cron mode, the increment of cron.')
     parser.add_argument('-v', action="store_true", help="Print verbose debugging information to the logfile")
     parser.add_argument('-d', action="store_true", help="Print verbose debugging information to stderr")

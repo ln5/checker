@@ -77,3 +77,9 @@ First edit the ... to your path, then enter the following into your cron
     0 12 * * * .../checker/main.py -m cron -c day_noon >/dev/null 2>&1
   
 
+If you want to run a peer you need to start checker in daemon mode and
+make sure that TCP port 5000 is reachable from all your peers.
+
+Again, edit the ... to your path, then enter the following into your cron
+
+    @reboot .../checker/main.py -m daemon
